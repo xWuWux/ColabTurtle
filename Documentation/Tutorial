@@ -1,0 +1,46 @@
+ColabTurtle Wrapper Documentation
+Introduction
+The colab_turtle_wrapper.py module provides a simplified interface to the ColabTurtle library, allowing users to draw using turtle graphics in Google Colab notebooks without manually installing or initializing the library.
+
+Prerequisites
+A Google account to access Google Colab.
+Basic knowledge of Python programming.
+Getting Started
+Accessing Google Colab:
+
+Open your web browser and navigate to Google Colab.
+Sign in with your Google account.
+Click on New Notebook to create a new Python notebook.
+Using the colab_turtle_wrapper.py Module:
+
+Copy the contents of the colab_turtle_wrapper.py module.
+In your Google Colab notebook, create a new code cell (click on + Code).
+Paste the copied content into this cell and run it (click on the play button or press Shift + Enter).
+Drawing with Turtle:
+
+After running the colab_turtle_wrapper.py module, you can start using turtle commands in subsequent code cells.
+For example, to draw a simple square:
+
+  from colab_turtle_wrapper import forward, left
+
+  for _ in range(4):
+      forward(100)
+      left(90)
+
+
+API Reference
+The module provides a set of functions that mirror the traditional turtle graphics API. Here are some of the key functions:
+
+forward(units): Moves the turtle forward by the specified number of units.
+backward(units): Moves the turtle backward by the specified number of units.
+left(degrees): Turns the turtle left by the specified number of degrees.
+right(degrees): Turns the turtle right by the specified number of degrees.
+penup(): Lifts the pen, so the turtle's movement won't draw anything.
+pendown(): Puts the pen down, so the turtle's movement will draw.
+... and many more. Refer to the colab_turtle_wrapper.py module for the complete list.
+
+Troubleshooting
+Library not installed: The module should automatically install the ColabTurtle library. However, if you encounter any issues, you can manually install it by running !pip3 install ColabTurtle in a new code cell.
+
+Turtle not drawing: Ensure you've run the colab_turtle_wrapper.py module before using turtle commands. Also, make sure you're using functions from the colab_turtle_wrapper module and not directly from ColabTurtle.
+
